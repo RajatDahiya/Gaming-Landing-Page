@@ -1,23 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar__brand">
-                <img src="assets/logo.png" alt="logo" class="navbar__logo"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zomato Landing Page</title>
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src = "https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="navbar"
+                  width ="80" height = "40" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Delivery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Dining Out</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Night Life</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Health</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search for restaurant, cuisine or dish"
+                   aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-            <div class="nav__items">
-                <button class="nav__item">Order Food</button>
-            </div>
-        </nav>
+          </nav>
 
-    </header>
-    
-</body>
+    <main class="container mt-3">
+      <!-- Hero section -->
+      <section class="hero__container">
+        <div class="d-flex align-items-center d-none d-lg-block">
+            <div class="shadow mb-5 bg-body rounded">
+          <img src="./assets/hero.jpg" alt="HeroImage" class="rounded-lg" width="784" height = "584" >
+            </div>
+        </div>
+            <div class="fs-1 px-2 d-none d-lg-block">
+          Order food from your favourite restaurants near you.
+            </div>
+        </div>
+      </div>
+      </section>
+
+      <!-- Explore Menu -->
+      <section class="explore__menu__container">
+        <h1 class="explore__menu__text">Explore Our menu</h1>
+        <div class="explore__menu__gradient__bg"></div>
+        <div class="explore__menu__lists">
+          <!-- Burger -->
+          <div class="food__card">
+            <div class="food__card__image__container">
+              <img src="./assets/burger.jpg" alt="burger" class="food__image" />
+            </div>
+            <div class="food__card__description">
+              <h3 class="food__title">Burger</h3>
+              <p>
+                Burger King, Mcdonalds, Burger Place
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+          </div>
+          <!-- Pizza -->
+          <div class="food__card" id="pizza__card">
+            <div class="food__card__image__container">
+              <img src="./assets/pizza.jpg" alt="pizza" class="food__image" />
+            </div>
+            <div class="food__card__description">
+              <h3 class="food__title">Pizza</h3>
+              <p>
+                Pizza Hut, Domino's Pizza
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+          </div>
+          <!-- Ice Cream -->
+          <div class="food__card">
+            <div class="food__card__image__container">
+              <img
+                src="./assets/iceCream.jpg"
+                alt="ice cream"
+                class="food__image"
+              />
+            </div>
+            <div class="food__card__description">
+              <h3 class="food__title">Ice Cream</h3>
+              <p>
+                Baskin Robins, Ibaco
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="explore__menu__view__more">
+          <button class="button__primary">View More</button>
+        </div>
+      </section>
+
+      <!-- Restaurant list -->
+      <section class="restaurant__container">
+        <h1 class="restaurant__text">Order From 100s of restaurants</h1>
+        <div class="restaurant__images__container">
+          <div class="restaurant__images__row__one">
+            <div class="restaurant__image__1">
+              <img
+                src="./assets/restaurant1.jpg"
+                alt="restaurant1"
+                class="restaurant__1"
+              />
+            </div>
+            <div class="restaurant__image__2">
+              <img
+                src="./assets/restaurant2.jpg"
+                alt="restaurant2"
+                class="restaurant__2"
+              />
+            </div>
+          </div>
+          <div class="restaurant__images__row__two">
+            <div class="restaurant__image__3">
+              <img
+                src="./assets/restaurant3.jpg"
+                alt="restaurant3"
+                class="restaurant__3"
+              />
+            </div>
+            <div class="restaurant__image__4">
+              <img
+                src="./assets/restaurant4.jpg"
+                alt="restaurant4"
+                class="restaurant__4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+            <div class="col-sm col-md-4">
+                <div class="card mb-2 mt-3">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/3/143/c9996dd70c88230268cb00d20a92b7cf_o2_featured_v2.jpg?output-format=webp" 
+                class="card-img-top" alt="cardImage">
+                <div class="card-body">
+                  <h5 class="card-title">Domino's Pizza</h5>
+                  <p class="card-text">Pizza, Fast Food, Beverages, Desserts</p>
+                  <a href="#" class="btn btn-primary">Buy ₹ 450/-</a>
+                </div>
+              </div>
+              </div>
+              
+            <div class="col-sm col-md-4">
+                <div class="card mb-2 mt-3">
+                <img src="https://b.zmtcdn.com/data/pictures/6/18783256/c54bd401576f5c5715abdcf3acba3d2b_o2_featured_v2.jpg?output-format=webp" 
+                class="card-img-top" height="214" alt="cardImage">
+                <div class="card-body">
+                  <h5 class="card-title">Flame Kitchen</h5>
+                  <p class="card-text">North Indian, Biryani, Desserts, Beverages</p>
+                  <a href="#" class="btn btn-primary">Buy ₹ 400/-</a>
+                </div>
+              </div>
+              </div>
+              
+            <div class="col-sm col-md-4">
+                <div class="card mb-2 mt-3">
+                <img src="https://b.zmtcdn.com/data/pictures/9/18273629/3a349e310723abb275935d6d4fb33e8a_featured_v2.jpg?output-format=webp" 
+                class="card-img-top" height="214" alt="cardImage">
+                <div class="card-body">
+                  <h5 class="card-title">Sandoz</h5>
+                  <p class="card-text">North Indian, Biryani, Chinese, Continental</p>
+                  <a href="#" class="btn btn-primary">Buy ₹ 350/-</a>
+                </div>
+              </div>
+              </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-sm col-md-4">
+                    <div class="card mb-2 mt-3">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/1/931/9410759d611db9c62c3acc23c1f27e06_o2_featured_v2.jpg?output-format=webp" 
+                class="card-img-top" alt="cardImage">
+                <div class="card-body">
+                  <h5 class="card-title">KFC</h5>
+                  <p class="card-text">Fried Chicken, Fast Food, Burger, Beverages</p>
+                  <a href="#" class="btn btn-primary">Buy ₹ 250/-</a>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-sm col-md-4">
+                <div class="card mb-2 mt-3">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/8/310078/9f2f843523d0e8b9ecd9ee9ee32c1c46_o2_featured_v2.jpg?output-format=webp" 
+                class="card-img-top" alt="cardImage">
+                <div class="card-body">
+                  <h5 class="card-title">Burger King</h5>
+                  <p class="card-text">Burger, Fast Food, Beverages, Desserts</p>
+                  <a href="#" class="btn btn-primary">Buy ₹ 149/-</a>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-sm col-md-4">
+                <div class="card mb-2 mt-3">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/1/171/0094c2b5485c4c2f52c931306442269b_o2_featured_v2.jpg" 
+                class="card-img-top" alt="cardImage">
+                <div class="card-body">
+                  <h5 class="card-title">Mcdonalds</h5>
+                  <p class="card-text">Burger, Fast Food, Beverages, Desserts</p>
+                  <a href="#" class="btn btn-primary">Buy ₹ 119/-</a>
+                </div>
+              </div>
+          </div>
+          </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-light pt-4 mt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+      
+              <!-- Content -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Order Food Now!</h5>
+              <p>You can order fresh, hot and finger-licking dishes from your favourite
+                  restaurants, choose from number of restaurants near you and
+                  get it delivered at your doorstep.
+              </p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Category</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">North India</a>
+                </li>
+                <li>
+                  <a href="#!">Continental</a>
+                </li>
+                <li>
+                  <a href="#!">South Indian</a>
+                </li>
+                <li>
+                  <a href="#!">Chinese</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Outlets</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Domino's</a>
+                </li>
+                <li>
+                  <a href="#!">Behroz Biryani</a>
+                </li>
+                <li>
+                  <a href="#!">Burger King</a>
+                </li>
+                <li>
+                  <a href="#!">Kwality Walls</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Locations</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">North-West Delhi</a>
+                </li>
+                <li>
+                  <a href="#!">West Delhi</a>
+                </li>
+                <li>
+                  <a href="#!">Central Delhi</a>
+                </li>
+                <li>
+                  <a href="#!">South Delhi</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <hr>
+      
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Get your First Order!</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+          </li>
+        </ul>
+        <!-- Call to action -->
+      
+        <hr>
+      
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+              <i class="fab fa-google-plus-g"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-dribbble mx-1">
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </li>
+        </ul>
+        <!-- Social buttons -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+          <a href="#!"> ZomatoLandingPage.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
 </html>
